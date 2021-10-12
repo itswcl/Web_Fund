@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    color:rgb(70, 66, 66);
+}
+
+.container {
+    width: 800px;
+    height: 533px;
+    background-image: url(background.jpg);
+    text-align: center;
+}
+
+.sub-content {
+    width: 750px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px 15px;
+    padding: 10px;
+}
+
+img {
+    width: 120px;
+    height: 120xx;
+}
+
+.group1 {
+    background-color: rgb(100, 174, 218);
+    opacity: 0.8;
+}
+
+.group2 {
+    background-color: rgb(250, 124, 145);
+    opacity: 0.8;
+}
+
+.group3 {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.note {
+    color: grey;
+    text-align: center;
+    font-size: 1px;
+}
