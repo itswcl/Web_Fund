@@ -1,0 +1,28 @@
+h1 {
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+    background-color: #58286b;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    width: auto;
+}
+h3 {
+    background-color: skyblue;
+    text-align: right;
+    text-decoration: underline;
+    font-weight: lighter;
+    font-family: monospace;
+    line-height: 30px;
+    height: 30px;
+    width: auto;
+}
+span {
+    color: rgb(95, 228, 219)
+}
