@@ -24,7 +24,7 @@
     height: 20px;
 }
 
-.nav > button {
+button {
     background-color: #467fed;
     color:white;
     text-align: center;
@@ -35,4 +35,53 @@
     padding: 1px;
     border: 1px solid black;
     box-shadow: 4px 4px 1px black;
+}
+
+.row {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left, .card > p {
+    flex: 2;
+}
+
+.right, .card > div {
+    flex: 1;
+}
+
+.card {
+    margin-top: 30px;
+    padding: 20px 0px;
+    height: 200px;
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+}
+
+p {
+    font-size: 28px;
+    margin-bottom:10px;
+}
+
+.sub-des {
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+.sub-card > h1 {
+    margin-bottom: 10px;
+}
+
+.sub-card {
+    text-align: center;
+}
+
+#like {
+    background-color: #fbd967;
+    color: black;
 }
