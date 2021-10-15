@@ -18,19 +18,18 @@
     justify-content: space-between;
 }
 
-.title {
+.sub-nav > .title {
     color: white;
-    margin-left: 40px;
 }
 
-.home, .profile, .connection {
+.sub-nav > a {
     color: white;
     text-decoration: none;
     padding: 10px;
     margin-left: 10px;
 }
 
-.btn {
+.global-nav > button {
     width: 85px;
     height: 30px;
     font-size: 10px;
@@ -40,14 +39,27 @@
 }
 
 .row {
-    /* width: 950px; */
     display: flex;
     justify-content: space-around;
 }
 
-.con-row, .request-row {
+.con-row-request, .con-row-friend {
     display: flex;
-    justify-content: flex-start;
+    padding: 5px;
+}
+
+.con-row-request {
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.con-row-request > p {
+    margin-right: auto;
+}
+
+.request-row {
+    display: flex;
     padding: 5px;
 }
 
@@ -59,15 +71,11 @@
     height: auto;
     background-color: white;
     border: 4px solid rgb(158, 158, 158);
-    margin: 25px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-bottom: 20px;
-}
-
-.card-foot {
-    padding: 0px;
+    padding-bottom: 10px;
 }
 
 .card-img {
@@ -77,8 +85,16 @@
 .card-name {
     margin: 60px 0 0 40px;
 }
-.card-sub {
-    margin: 5px 0 0 20px;
+.card-top > p, .card-bottom > p {
+    margin: 5px 0 0 50px;
+}
+
+.card-bottom > .title {
+    padding: 10px 50px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(54, 54, 54);
+    display: flex;
 }
 
 .card-title {
@@ -107,19 +123,14 @@
     flex: 1;
 }
 
-.edu-head {
-    font-size: 25px;
-}
-.edu-note {
+.card-bottom > .subhead {
     font-size: 20px;
+    margin: 10px 0 0 50px;
+}
+.card-bottom > .date {
     color: rgb(170, 170, 170);
 }
-.edu-body {
-    font-size: 20px;
-}
-
-.con-head {
-    margin-right: 30px;
+.card-bottom > p, .con-row-friend, .con-row-request {
     font-size: 20px;
 }
 
@@ -140,7 +151,7 @@
     vertical-align: center;
 }
 
-.count_connection {
+.count-connection {
     vertical-align: middle;
     font-size: 10px;
     margin-right: 5px;
@@ -157,18 +168,17 @@
     width: 25px;
     height: 25px;
     margin-left: 15px;
+    margin-right: 15px;
     border-radius: 50%;
 }
 
-.choice {
+.request-row > img {
     width: 25px;
-    height: 25px;
-    border-radius: 50%;
     margin-right: 10px;
 }
 
-.foot {
-    padding: 10px;
+.card-bottom > a {
+    padding: 10px 0 0px 10px;
     color: blue;
     border-top: 4px solid rgb(158, 158, 158);
 }
