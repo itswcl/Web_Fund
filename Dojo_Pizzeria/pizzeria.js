@@ -35,11 +35,34 @@ var pizza = {
 }
 
 function randomPizza() {
-    var pizza = {
+    // set a random collection for pizza
+    var pizzaRandom = {
         crustType: pizza.crustType[Math.floor(Math.random() * 1)],
         sauceType: pizza.sauceType[Math.floor(Math.random() * 2)],
+        cheeses: [],
+        toppings: [],
     }
-    for (var i = 0; i <= Math.floor(Math.random()*2); i++) {
-        
+    // random pick how many cheese and topping
+    var cheesesCount = Math.floor(Math.random() * 3)
+    var toppingsCount = Math.floor(Math.random() * 7)
+
+    // iterate thru how many cheese we want
+    for (var i = 0; i <= cheesesCount; i++) {
+        // check if we picked already 
+        if (pizzaRandom.cheeses.indexOf(pizza.cheeses[i]) === -1) {
+            // if not we adding it
+            pizzaRandom.cheeses.push(pizza.cheeses[i]);
+        }
     }
+    // iterate thru how many topping we want
+    for (var i = 0; i <= toppingsCount; i++) {
+        // check if added already
+        if (pizzaRandom.toppings.indexOf(pizza.toppings[i]) === -1) {
+            // adding the topping
+            pizzaRandom.toppings.push(pizza.toppings[i]);
+        }
+    }
+    // result of random pizza
+    return pizzaRandom;
 }
+console.log(randomPizza());
