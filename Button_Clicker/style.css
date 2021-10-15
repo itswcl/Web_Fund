@@ -4,7 +4,7 @@
 }
 
 #container {
-    width: 1200px;
+    width: 900px;
     height: 800px;
     background-color: white;
     margin: 0 auto;
@@ -41,18 +41,17 @@ button {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
-.left, .card > p {
+.left, .card-left > p {
     flex: 2;
 }
 
-.right, .card > div {
+.right, .card-left > div {
     flex: 1;
 }
 
-.card {
+.card-left {
     margin-top: 30px;
     padding: 20px 0px;
     height: 200px;
@@ -61,6 +60,18 @@ button {
     justify-content: space-around;
     align-items: center;
     border: 3px solid black;
+}
+
+.card-right {
+    padding: 10px;
+    height: 200px;
+    width: 300px;
+    border: 3px solid black;
+}
+
+.right {
+    margin-top: 30px;
+    align-self: flex-start;
 }
 
 p {
@@ -84,4 +95,17 @@ p {
 #like {
     background-color: #fbd967;
     color: black;
+}
+
+.card-right-title {
+    font-size: 40px;
+}
+
+.btn-definition {
+    margin-top: 30px;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    background-color: #93c47d;
 }
