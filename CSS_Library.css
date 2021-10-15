@@ -118,4 +118,20 @@ button {
 .btn {
     padding: 2px;
 }
+/* -- adding shadow while mouse in or out */
+.shadow {
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    bottom: 5px;
+}
+/* add class into list */
+function addShadow(e) {
+  e.classList.add("shadow");
+  e.style.backgroundColor = "lightyellow";
+}
 
+/* remove shadow class from the list */
+function removeShadow(e) {
+  e.classList.remove("shadow");
+  e.style.backgroundColor = "black"
+}
