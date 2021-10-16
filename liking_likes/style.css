@@ -3,7 +3,14 @@
     margin: 0;
 }
 
-.card > div, .row {
+.container {
+    width: 800px;
+    min-height: 300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.card-right > div, .row {
     display: flex;
     justify-content: space-between;
 }
@@ -13,17 +20,17 @@
 }
 
 .col-2 {
-    flex: 2;
+    flex: 3;
 }
 
-.card {
+.card-right {
     padding: 20px;
     width: 280px;
     height: 70px;
     border: 1px solid black;
 }
 
-.card > .top {
+.card-right > .top {
     margin-bottom: 15px;
     font-size: 15px;
 }
@@ -39,4 +46,11 @@
     padding: 1px;
     border: 1px solid black;
     box-shadow: 4px 4px 1px black;
+}
+
+.card-left {
+    margin-right: 10px;
+    padding: 20px;
+    height: 70px;
+    border: 1px solid black;
 }
