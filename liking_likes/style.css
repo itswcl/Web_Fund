@@ -10,7 +10,20 @@
     align-items: center;
 }
 
-.card-right > div, .row {
+.global-nav {
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+.sub-nav {
+    margin: 15px auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.card-right > div, .row, .set-like {
     display: flex;
     justify-content: space-between;
 }
@@ -20,37 +33,49 @@
 }
 
 .col-2 {
-    flex: 3;
+    flex: 2;
 }
 
 .card-right {
-    padding: 20px;
-    width: 280px;
-    height: 70px;
-    border: 1px solid black;
-}
-
-.card-right > .top {
+    padding: 30px;
     margin-bottom: 15px;
-    font-size: 15px;
+    font-size: 25px;
+    height: auto;
 }
 
-.top > button {
+.set-like > p {
+    margin: 0 40px 20px 0;
+}
+
+#btn-like {
     background-color: #f6d87b;
     color:black;
     text-align: center;
-    font-weight: 100 ;
-    width: 60px;
-    line-height: 23px;
-    height: 25px;
-    padding: 1px;
+    font-size: 20px;
+    width: 70px;
+    height: 35px;
     border: 1px solid black;
     box-shadow: 4px 4px 1px black;
 }
 
 .card-left {
-    margin-right: 10px;
+    min-height: 200px;
+    text-align: center;
+    margin-right: 50px;
     padding: 20px;
-    height: 70px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#self {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.border {
     border: 1px solid black;
 }

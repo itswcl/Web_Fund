@@ -8,25 +8,54 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
     <div class="container">
         <h1 class="global-nav">Network</h1>
         <h1 class="sub-nav">Your Feed</h1>
         <div class="row">
             <div class="col-1">
                 <div class="card-left">
-                    <a href="#">Add on avatar</a>
-                    <h3>Wei Lee</h3>
+                    <div><img id="self" src="images/wei.png"></div>
+                    <h4><a href="#">Add an avatar</a></h4>
+                    <h1>Wei Lee</h1>
                 </div>
             </div>
             <div class="col-2">
-                <div class="card-right">
+                <div class="card-right border">
                     <div class="top">
-                        <div class="Name">Some User</div>
-                        <p>0 like(s)</p>
-                        <button id="like" onclick="likeIncrease()">Like</button>
+                        <div class="name">Neil M</div>
+                    <div class="set-like">
+                        <p>9 like(s)</p>
+                        <button id="btn-like" class="btn1" onclick="likeIncrease()">Like</button>
                     </div>
-                    <p>This is some filler text, it can say anything we like</p>
+                    </div>
+                    <p>
+                        I just set up this new discord bot, let me know what you all think.
+                        <a href="#">link</a>
+                    </p>
+                </div>
+                <div class="card-right border">
+                    <div class="top">
+                        <div class="name">Nichole K</div>
+                    <div class="set-like">
+                        <p>12 like(s)</p>
+                        <button id="btn-like" class="btn2" onclick="likeIncrease()">Like</button>
+                    </div>
+                    </div>
+                    <p>
+                        Just finished my <a href="#">next comic</a>, check it out.
+                    </p>
+                </div>
+                <div class="card-right border">
+                    <div class="top">
+                        <div class="name">Jim R</div>
+                    <div class="set-like">
+                        <p>9 like(s)</p>
+                        <button id="btn-like" class="btn3" onclick="likeIncrease()">Like</button>
+                    </div>
+                    </div>
+                    <p>
+                        I can't stop listening to the <a href="#">new album</a>. Who else is liking it?
+                    </p>
                 </div>
             </div>
         </div>
