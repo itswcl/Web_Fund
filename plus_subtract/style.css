@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#count {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px;
+}
