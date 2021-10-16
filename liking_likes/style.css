@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card > div, .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.card {
+    padding: 20px;
+    width: 280px;
+    height: 70px;
+    border: 1px solid black;
+}
+
+.card > .top {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.top > button {
+    background-color: #f6d87b;
+    color:black;
+    text-align: center;
+    font-weight: 100 ;
+    width: 60px;
+    line-height: 23px;
+    height: 25px;
+    padding: 1px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 1px black;
+}
