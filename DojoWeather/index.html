@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DojoWeather</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <div id="container">
+        <div class="main-nav">
+            <h1>DojoWeather</h1>
+            <ul>
+               <li>Burbank</li>
+               <li>Chicago</li>
+               <li>Dallas</li>
+            </ui>
+        </div>
+        <div class="sub-nav">
+            <h1>San Jose</h1>
+            <div class="temparature">
+                <p>show temperature in</p>
+                <select name="format" id="format">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="body"></div>
+        <div id="cookie"></div>
+    </div>
 </body>
 </html>
