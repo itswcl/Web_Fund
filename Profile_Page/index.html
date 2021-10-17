@@ -25,7 +25,7 @@
                     <h1 class="card-name">Wei Lee</h1>
                     <p><img class="icon" src="icons/map-marker.png" alt="map"> San Jose</p>
                     <p>Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
-                    <p><img class="icon" src="icons/gear.png" alt="gear"> <a href="#"> edit profile</a></p>
+                    <p onclick="modifyName()"><img class="icon" src="icons/gear.png" alt="gear"> <a href="#"> edit profile</a></p>
                 </div>
                 <div class="card-bottom">
                     <h1 class="title">Education</h1>
@@ -44,22 +44,22 @@
                         <img class="request" src="images/todd-s.jpg" alt="todd">
                         <p>Todd E</p>
                         <div class="request-row">
-                            <img src="icons/accept-circle.png" alt="accept">
-                            <img src="icons/close-circle.png" alt="reject">
+                            <img class="btn-accept" onclick="removeEle(0); connectCounts()" src="icons/accept-circle.png" alt="accept">
+                            <img class="btn-reject" onclick="removeEle(0)" src="icons/close-circle.png" alt="reject">
                         </div>
                     </div>
                     <div class="con-row-request">
                         <img class="request" src="images/phil-s.jpg" alt="phil">
                         <p>Phil K</p>
                         <div class="request-row">
-                            <img src="icons/accept-circle.png" alt="accept">
-                            <img src="icons/close-circle.png" alt="reject">
+                            <img class="btn-accept" onclick="removeEle(1); connectCounts()" src="icons/accept-circle.png" alt="accept">
+                            <img class="btn-reject" onclick="removeEle(1)" src="icons/close-circle.png" alt="reject">
                         </div>
                     </div>
                 </div>
                 <div class="card-bottom">
                     <div class="card-title">
-                        <p class="count-connection">500+</p>
+                        <p class="count-connection">418</p>
                         <p class="count">Your Connections</p>
                     </div>
                     <div class="con-row-friend">
@@ -83,5 +83,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
