@@ -31,10 +31,18 @@ li {
     border-bottom: 3px solid black;
 }
 
-.temparature {
+.temperature,
+.body {
     display: flex;
 }
 
 .sub-nav p {
     margin-right: 10px;
+}
+
+.card {
+    margin: 20px auto;
+    width: 200px;
+    height: 300px;
+    background-color: #eee;
 }
