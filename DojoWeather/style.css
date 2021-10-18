@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #container {
@@ -32,8 +34,10 @@ li {
 }
 
 .temperature,
-.body {
+.body,
+.temp {
     display: flex;
+    justify-content: space-between;
 }
 
 .sub-nav p {
@@ -41,8 +45,62 @@ li {
 }
 
 .card {
-    margin: 20px auto;
+    margin: 20px 0;
     width: 200px;
     height: 300px;
     background-color: #eee;
+    text-align: center;
+    padding-top: 15px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.card > p {
+    font-size: 18px;
+}
+
+.temp {
+    font-size: 25px;
+    padding: 25px;
+}
+
+.red {
+    color: #cf2a27;
+}
+
+.blue {
+    color: #2b78e4;
+}
+
+#cookie img {
+    width: 80px;
+    height: 80px;
+}
+
+.btn-primary {
+    background-color: #9fc5f8;
+    color:black;
+    font-weight: 100 ;
+    width: 150px;
+    height: 25px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 1px black;
+}
+
+#cookie {
+    display: flex;
+    position: fixed;
+    width: 1000px;
+    padding: 0 80px;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.card-cookie {
+    padding: 0 30px;
 }
