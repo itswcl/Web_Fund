@@ -13,11 +13,17 @@ function press(n) {
 
     if (result.length === 0) {
         document.querySelector("#display").innerText = 0;
+        console.log("if")
+    // check if there's sign in the array
+    // include function 
     } else if (signs.indexOf(result[result.length-2]) !== -1) {
-    // } else if (result.includes('+') || result.includes('-') || result.includes('/') || result.includes('*') ) {
+        // tempRes.push(n);
         document.querySelector("#display").innerText = n;
+        // console.log(tempRes);
+        console.log("else if")
     }   else {
         document.querySelector("#display").innerText = result.join("");
+        console.log("else")
     } 
     console.log(result);
 }

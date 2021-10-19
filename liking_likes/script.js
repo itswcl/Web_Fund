@@ -1,10 +1,10 @@
-// var like = document.querySelector(".set-like > p")
-// var count = parseInt(document.querySelector(".set-like > p").innerText[0]);
+var like = document.querySelector(".set-like > p")
+var count = parseInt(document.querySelector(".set-like > p").innerText[0]);
 
-// function likeIncrease() {
-//     count += 1;
-//     like.innerText = count + " like(s)";
-// }
+function likeIncrease() {
+    count += 1;
+    like.innerText = count + " like(s)";
+}
 
 // array to hold each card's likes
 var likeCards = document.querySelectorAll(".set-like > p");
