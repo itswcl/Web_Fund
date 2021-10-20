@@ -1,30 +1,9 @@
 var result = [];
 var tempRes = [];
-// var signs = ["+", "-", "/", "*"]
 
 function press(n) {
-        if (n > 0) {
-            result.push(n);
-        } else if (n === 0 && result[0] !== undefined) {
-            result.push(n);
-        } else if (n === '.' && result[0] !== undefined && result.indexOf('.') === -1) {
-            result.push(n);
-        } 
-    
-        if (result.length === 0) {
-            document.querySelector("#display").innerText = 0;
-        // check if there's sign in the array
-        // include function 
-        // signs.indexOf(result[result.length-2]) !== -1
-        } else if (result.includes("+") || result.includes("-") || result.includes("*") || result.includes("/")) {
-            tempRes[tempRes.length - 1].push(n);
-            document.querySelector("#display").innerText = tempRes[tempRes.length - 1].join("");
-        }   else {
-            document.querySelector("#display").innerText = result.join("");
-        } 
-        console.log(result);
-        console.log(tempRes);
-
+    appendNumber(n);
+    displayNumber(n);
 }
 
 function setOP(sign) {
@@ -35,14 +14,41 @@ function setOP(sign) {
 }
 
 function calculate() {
-    var finalAns = eval(result.join(''));
-    document.querySelector("#display").innerText = finalAns;
-    result = finalAns;
-    tempRes = [];
+        var finalAns = eval(result.join(''));
+        document.querySelector("#display").innerText = finalAns;
+        result = [finalAns];
+        tempRes = [];
 }
 
 function clr() {
     result = [];
     tempRes = [];
     document.querySelector("#display").innerText = 0;
+}
+
+function appendNumber(n) {
+    if (document.querySelector("#display").innerText.length < 9 && typeof n === 'number') {
+        if (n > 0) {
+            result.push(n);
+        } else if (n === 0 && result[0] !== undefined) {
+            result.push(n);
+        } else if (n === '.' && result[0] !== undefined && result.indexOf('.') === -1) {
+            result.push(n);
+        }
+    }
+}
+
+function displayNumber(n) {
+    var display = document.querySelector("#display")
+    if (result.length === 0) {
+        display.innerText = 0;
+    } else if (result.includes("+") || result.includes("-") || result.includes("*") || result.includes("/")) {
+        if (tempRes[0].length < 9) {
+    
+            tempRes[tempRes.length - 1].push(n);
+            display.innerText = tempRes[tempRes.length - 1].join("");
+        }
+    }   else {
+        display.innerText = result.join("");
+    } 
 }
