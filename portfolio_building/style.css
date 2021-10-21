@@ -1,0 +1,37 @@
+* {
+    font-family: 'Andada Pro', serif;
+}
+
+.jumbotron {
+    margin: 30px 0;
+    padding: 50px;
+    border: 50px solid white;
+    border-radius: 800px;
+    background-image: url(assets/backgroudofpumpkin.jpg);
+}
+
+.card-img-top {
+    border-radius: 50%;
+}
+
+body,
+.navbar,
+.col,
+.card {
+    background-color: #e9702b;
+    border: none;
+}
+
+.btn-primary {
+    border: none;
+    background-color: #b9571e;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.card-title,
+.card-text {
+    color: #381a08;
+}
